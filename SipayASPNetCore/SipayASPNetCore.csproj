@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <UserSecretsId>85a8de6d-8ce8-49aa-9c50-bf81958ecf75</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\card-js.min.js" />
+    <None Include="wwwroot\lib\semantic\semantic.min.css" />
+    <None Include="wwwroot\lib\semantic\semantic.min.js" />
+    <None Include="wwwroot\lib\semantic\themes\basic\assets\fonts\icons.eot" />
+    <None Include="wwwroot\lib\semantic\themes\basic\assets\fonts\icons.svg" />
+    <None Include="wwwroot\lib\semantic\themes\basic\assets\fonts\icons.ttf" />
+    <None Include="wwwroot\lib\semantic\themes\basic\assets\fonts\icons.woff" />
+    <None Include="wwwroot\lib\semantic\themes\default\assets\fonts\brand-icons.eot" />
+    <None Include="wwwroot\lib\semantic\themes\default\assets\fonts\brand-icons.svg" />
+    <None Include="wwwroot\lib\semantic\themes\default\assets\fonts\brand-icons.ttf" />
+    <None Include="wwwroot\lib\semantic\themes\default\assets\fonts\brand-icons.woff" />
+    <None Include="wwwroot\lib\semantic\themes\default\assets\fonts\brand-icons.woff2" />
+    <None Include="wwwroot\lib\semantic\themes\default\assets\fonts\icons.eot" />
+    <None Include="wwwroot\lib\semantic\themes\default\assets\fonts\icons.otf" />
+    <None Include="wwwroot\lib\semantic\themes\default\assets\fonts\icons.svg" />
+    <None Include="wwwroot\lib\semantic\themes\default\assets\fonts\icons.ttf" />
+    <None Include="wwwroot\lib\semantic\themes\default\assets\fonts\icons.woff" />
+    <None Include="wwwroot\lib\semantic\themes\default\assets\fonts\icons.woff2" />
+    <None Include="wwwroot\lib\semantic\themes\default\assets\fonts\outline-icons.eot" />
+    <None Include="wwwroot\lib\semantic\themes\default\assets\fonts\outline-icons.svg" />
+    <None Include="wwwroot\lib\semantic\themes\default\assets\fonts\outline-icons.ttf" />
+    <None Include="wwwroot\lib\semantic\themes\default\assets\fonts\outline-icons.woff" />
+    <None Include="wwwroot\lib\semantic\themes\default\assets\fonts\outline-icons.woff2" />
+    <None Include="wwwroot\lib\semantic\themes\default\assets\images\flags.png" />
+    <None Include="wwwroot\lib\semantic\themes\github\assets\fonts\octicons-local.ttf" />
+    <None Include="wwwroot\lib\semantic\themes\github\assets\fonts\octicons.svg" />
+    <None Include="wwwroot\lib\semantic\themes\github\assets\fonts\octicons.ttf" />
+    <None Include="wwwroot\lib\semantic\themes\github\assets\fonts\octicons.woff" />
+    <None Include="wwwroot\lib\semantic\themes\material\assets\fonts\icons.eot" />
+    <None Include="wwwroot\lib\semantic\themes\material\assets\fonts\icons.svg" />
+    <None Include="wwwroot\lib\semantic\themes\material\assets\fonts\icons.ttf" />
+    <None Include="wwwroot\lib\semantic\themes\material\assets\fonts\icons.woff" />
+    <None Include="wwwroot\lib\semantic\themes\material\assets\fonts\icons.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Scripts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SipayCore\SipayCore.csproj" />
+  </ItemGroup>
+
+</Project>

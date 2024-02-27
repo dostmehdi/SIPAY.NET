@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\YerelAdmin\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\YerelAdmin\\.nuget\\packages"
+    ]
+  }
+}
