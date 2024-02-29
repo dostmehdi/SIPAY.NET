@@ -126,8 +126,8 @@ namespace SIPAY.Controllers
 
                 string requestForm = paymentRequest.GenerateFormHtmlToRedirect(_config["SIPAY:BaseUrl"] + "/api/pay3d");
 
-                var bytes = Encoding.UTF8.GetBytes(requestForm);
-                await HttpContext.Response.Body.WriteAsync(bytes, 0, bytes.Length);
+                // var bytes = Encoding.UTF8.GetBytes(requestForm);
+                // await HttpContext.Response.Body.WriteAsync(bytes, 0, bytes.Length);
 
                 return View("Request3DSipay", requestForm);
             }
@@ -167,10 +167,12 @@ namespace SIPAY.Controllers
                 SipaySmartPaymentRequest payRequest = new SipaySmartPaymentRequest(settings, paymentForm.SelectedPosData);
 
                 payRequest.CCNo = paymentForm.CreditCardNumber.Replace(" ", "");
-                payRequest.CCHolderName = paymentForm.CreditCardName;
+                payRequest.CCHolderName = paymentForm.CreditCardName ?? "Mehdi";
                 payRequest.CCV = paymentForm.CreditCardCvv2;
-                payRequest.ExpiryYear = paymentForm.CreditCardExpireYear.ToString();
-                payRequest.ExpiryMonth = paymentForm.CreditCardExpireMonth.ToString();
+                // payRequest.ExpiryYear = paymentForm.CreditCardExpireYear.ToString();
+                // payRequest.ExpiryMonth = paymentForm.CreditCardExpireMonth.ToString();
+                payRequest.ExpiryYear = "26";
+                payRequest.ExpiryMonth = "12";
                 payRequest.InvoiceDescription = "";
                 payRequest.InvoiceId = paymentForm.OrderId;
                 payRequest.Total = paymentForm.Amount;
@@ -256,7 +258,7 @@ namespace SIPAY.Controllers
                 var bytes = Encoding.UTF8.GetBytes(requestForm);
                 await HttpContext.Response.Body.WriteAsync(bytes, 0, bytes.Length);
 
-                //return View("Request3DSipay", requestForm);
+                return View("Request3DSipay", requestForm);
             }
 
             return View();

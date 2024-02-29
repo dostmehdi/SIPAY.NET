@@ -23,7 +23,7 @@
 
     <div class="two fields">
         <div class="field">
-            <input class="cvc half" name="Amount" placeholder="Miktar" required>
+            <input class="cvc half" name="Amount" placeholder="Miktar" required value="1200">
         </div>
         <div class="field">
             <input class="cvc half" name="OrderId" placeholder="Sipariş No" required>
@@ -36,11 +36,10 @@
 
     <div class="card-js" data-stripe="true">
 
-        <input class="name" id="the-card-name-id" name="CardholderName" placeholder="Kart Sahibinin Adı" required>
-        <input class="card-number my-custom-class" name="card-number" id="CardNumber" placeholder="Kart Numarası" required>
-        <input class="expiry-month" name="ExpireMonth" required>
-        <input class="expiry-year" name="ExpireYear" required>
-        <input class="cvc" name="CardCode" placeholder="Güvenlik Kodu (CVV)" required>
+        <input class="card-number my-custom-class" name="card-number" id="CardNumber" placeholder="Kart Numarası" required value="4508034508034509">
+                        <input class="expiry-month" name="ExpireMonth" required value="12">
+                        <input class="expiry-year" name="ExpireYear" required value="26">
+                        <input class="cvc" name="CardCode" placeholder="Güvenlik Kodu (CVV)" required value="000">
     </div>
 
     <div style=" padding: 15px 0 0 0; font-size: 15px;">
